@@ -1,5 +1,5 @@
 name 'adaptavist-docker_config'
-version '0.1.8'
+version '0.1.9'
 source 'git@bitbucket.org:Adaptavist/puppet-docker_config.git'
 author 'adaptavist'
 summary 'docker_config Module' 
