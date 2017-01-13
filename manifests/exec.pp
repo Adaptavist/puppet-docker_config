@@ -33,7 +33,7 @@ define docker_config::exec(
     } else {
         $real_command = $command
     }
-    
+
     docker::exec{ $name:
         detach        => $real_detach,
         interactive   => $real_interactive,

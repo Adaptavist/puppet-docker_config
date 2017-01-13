@@ -37,7 +37,7 @@ define docker_config::run(
     $restart = 'false',
 ){
     include docker_config
-    
+
     if ($hostentries == ''){
         $real_hostentries = []
     } else {
@@ -97,7 +97,7 @@ define docker_config::run(
     } else {
         $real_links = $links
     }
-    
+
     if ($volumes == ''){
         $real_volumes = []
     } else {
@@ -127,13 +127,13 @@ define docker_config::run(
     $real_privileged = str2bool($privileged)
     $real_restart_service = str2bool($restart_service)
     $real_disable_network = str2bool($disable_network)
-    
+
     if ($hostname == 'false'){
         $real_hostname = false
     } else {
         $real_hostname = $hostname
     }
-    
+
     if ($username == 'false'){
         $real_username = false
     } else {

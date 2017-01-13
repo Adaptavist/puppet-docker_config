@@ -83,7 +83,7 @@ define docker_config::image(
     } else {
         $real_docker_tarball = $real_docker_tar
     }
-    
+
     docker::image{ $name:
         ensure      => $ensure,
         image       => $image,
